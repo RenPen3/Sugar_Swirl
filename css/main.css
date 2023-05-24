@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -92,7 +94,7 @@ li {
     height: 100vh;
 }
 
-.hero-text {
+.hero-container .hero-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -105,32 +107,33 @@ li {
     height: 100vh;
 }
 
-.hero-text span {
+.hero-container .hero-text span {
     color: gold;
 }
 
-.hero-text h1 {
-    font-size: 90px;
-    font-weight: 800;
+.hero-container .hero-text h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 60px;
+    font-weight: 2;
     margin: 100px 0 0 0;
     padding: 0 30px;
 }
 
-.hero-text h3 {
-    font-size: 30px;
+.hero-container .hero-text h3 {
+    font-size: 20px;
     font-weight: 100;
     font-style: italic;
     margin: 0;
     padding: 0 30px;
 }
 
-.hero-text  p {
+.hero-container .hero-text  p {
     font-size: 35px;
     font-weight: 300;
     margin: 0;
 }
 
-.hero-text a {
+.hero-container .hero-text a {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -143,7 +146,7 @@ li {
     outline: none;
 }
 
-.hero-text a:hover {
+.hero-container .hero-text a:hover {
     color: #fff;
     background-color: #00b2b5;
 }
