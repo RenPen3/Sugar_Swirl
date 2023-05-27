@@ -109,8 +109,26 @@ li {
 }
 
 .hero-container {
+    background-color: yellow;
+}
+
+.hero-container .img {
+    background-image: url('/img/Bee.webp');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     width: 100%;
     height: 100vh;
+    vertical-align: top;
+}
+
+.hero-container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-container .hero-text {
@@ -124,6 +142,8 @@ li {
     gap: 1rem;
     width: 100%;
     height: 100vh;
+    /* max-width: 1100px; */
+
 }
 
 .hero-container .hero-text span {
@@ -181,24 +201,7 @@ li {
     cursor: pointer;
 }
 
-.hero-container .img {
-    background-image: url('/img/Bee.webp');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
 
-.hero-container::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
 
 
@@ -210,7 +213,7 @@ li {
 .product-container {
     padding: 100px 40px;
     margin-inline: auto;
-    background-color: var(--colr-white);
+    background-color: #fff;
 }
 
 .product-container h2 {
@@ -411,33 +414,80 @@ li {
     align-items: center;
     width: 100%;
     height: 80vh;
-    padding: 40px;
+    padding: 200px 0;
     color: var(--colr-black);
-    background-color: var(--colr-white);
+    background-color: #fff;
 }
 
-.popup-container h1 {
+.popup-container h2 {
+    position: relative;
+    font-size: 4rem;
     margin: 0;
     padding: 40px 0;
+}
+
+.popup-container h2::before {
+    position: absolute;
+    content: "@SugarSwirl";
+    font-size: 2.5rem;
+    color: var(--);
+    right: 40%;
+    left: 60%;
+    bottom: 0;
+
 }
 
 .popup-slider {
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    margin: 20px 0;
+    margin: 50px 0;
     width: 100%;
     max-width: 1600px;
 }
 
 .pop-box {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* color: #fff; */
     width: 100%;
-    height: 280px;
-    border-radius: 10px;
+    height: 400px;
+    background-color: transparent;
+    /* border-radius: 10px; */
+}
+
+.box-1 {
+    background-image: url('https://source.unsplash.com/random/?random&1/300x300');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.box-2 {
+    background-image: url('https://source.unsplash.com/random/?general&1/300x300');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.box-3 {
+    background-image: url('https://source.unsplash.com/random/?instagram&1/300x300');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.pop-box::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
 }
 
 .pop-box:nth-last-of-type(odd) {
@@ -446,6 +496,22 @@ li {
 
 .pop-box:nth-last-of-type(even) {
     background-color: var(--colr-secondary);
+}
+
+.pop-box h3, .pop-box p {
+    color: var(--colr-white);
+    letter-spacing: 1px;
+    z-index: 9999;
+}
+
+.pop-box h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.pop-box p {
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 
