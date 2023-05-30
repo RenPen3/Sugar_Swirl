@@ -11,33 +11,36 @@
 <body>
 
 
-    <header class="header-container">
-      <nav class="nav-wrapper">
-        <div class="logo">
-          <img src="/img/Sugar_Swirl_Logo.svg" alt="Sugar Swirl Logo">
-          <!-- <img src="img/HONEYBTREATS-wht.png" alt="Honey B Treats Logo"> -->
-          Sugar Swirl
-        </div>
-        <div class="main-menu">
-          <ul class="menu-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#pop-ups">Pop-Ups</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="mobile-container">
+    <header id="header" >
+      <nav class="header-container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="/">
+              <img src="/img/Sugar_Swirl_Logo.svg" alt="Sugar Swirl Logo">
+            </a>
+            <h3>Sugar Swirl</h3>
+          </div>
           <div class="main-menu">
-            <ul>
+            <ul class="menu-list">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Pop-Ups</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#pop-ups">Pop-Ups</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- Mobile Menu -->
+          <div class="mobile-container">
+            <div class="main-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pop-Ups</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -46,9 +49,10 @@
     <main>
     <section id="hero">
       <div class="hero-container">
+        <div class="hero-content">
           <div class="hero-text">
               <h1>Discover the Delightful World of <span>Sugar Swirl</span></h1>
-              <h3>Delicious Delights Baked with Love</h3>
+              <h3>Come Try Our Delicious Delights Baked with Love</h3>
               <!-- <p>Bienvenidos a mi cocina!</p> -->
               <a href="#contact">Contact Me</a>
             <div class="hero-icons">
@@ -57,20 +61,19 @@
               <i class="fa-brands fa-youtube"></i>
             </div>
           </div>
-        <div class="img"></div>
+        </div>
       </div>
     </section>
 
     <section id="products">
       <div class="product-container">
-      <h2>Our Menu</h2>
-      <div class="box1">
-        <!-- Cupcakes -->
-        <div class="product-box">
-          <div class="shape"></div>
-            <img src="img/treat8.webp" alt="">
-          <div class="product-list">
-              <h2><i style="margin-right:16px;" class="fa-sharp fa-regular fa-cupcake"></i>Cupcakes / <span>$3.50</h2>
+        <h2>Our Menu</h2>
+        <div class="box1">
+          <!-- Cupcakes -->
+          <div class="product-box">
+              <img src="img/treat8.webp" alt="">
+            <div class="product-list">
+              <h2><i style="margin-right:16px;" class="fa-sharp fa-regular fa-cupcake"></i>Cupcakes | <span>$3.50</h2>
             <div class="product">
               <h3>Vanilla Bean</h3>
               <p>Our vanilla bean cupcake is a moist and fluffy with real vanilla beans</p>
@@ -136,12 +139,12 @@
 
     <section id="about">
       <div class="about-container">
+        <h2>Hi, there! I'm a baker based in Los Angeles</h2> 
         <div class="about-content">
           <div class="about-image">
             <img src="/img/treat12.webp" alt="">
           </div>
           <div class="about-text">
-            <h2>Hi, there! I'm a baker based in Los Angeles</h2>
               <p>I'm Janet Cardero, a passionate baker with years of experience and a love for creating delightful, mouthwatering treats. From fluffy cakes to delicate pastries, I take pride in delivering baked goods that not only taste incredible but also look beautiful.</p>
               <p>Using only the finest ingredients and paying attention to every detail, I pour my heart and soul into every batch I make. Whether it's a special occasion cake or a comforting batch of warm, homemade cookies, I'm here to bring a touch of sweetness to your life. Join me on this delicious journey, and let's create memorable experiences through the art of pastry.</p>
             <div class="icons">
@@ -179,19 +182,21 @@
 
     <section id="pop-ups">
       <div class="popup-container">
-        <h2>Connect With Us</h2>
-        <div class="popup-slider">
-          <div class="pop-box box-1">
-            <h3>Sugar Swirl</h3>
-            <p>Having Some Fun</p>
-          </div>
-          <div class="pop-box box-2">
-            <h3>Sugar Swirl</h3>
-            <p>Farmers Market 2</p>
-          </div>
-          <div class="pop-box box-3">
-            <h3>Sugar Swirl</h3>
-            <p>Farmers Market 3</p>
+        <div class="pop-content">
+          <h2>Connect With Us</h2>
+          <div class="popup-slider">
+            <div class="pop-box box-1">
+              <h3>Sugar Swirl</h3>
+              <p>Having Some Fun</p>
+            </div>
+            <div class="pop-box box-2">
+              <h3>Sugar Swirl</h3>
+              <p>Farmers Market 2</p>
+            </div>
+            <div class="pop-box box-3">
+              <h3>Sugar Swirl</h3>
+              <p>Farmers Market 3</p>
+            </div>
           </div>
         </div>
       </div>
