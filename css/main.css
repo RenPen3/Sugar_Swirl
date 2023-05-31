@@ -46,6 +46,7 @@ input[type='submit']:hover {
 .fa-brands {
     font-size: 1.5rem;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .fa-brands:hover {
@@ -68,7 +69,7 @@ input[type='submit']:hover {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     /* background-color: transparent; */
-    z-index: 1;
+    z-index: 99;
 }
 
 
@@ -243,6 +244,10 @@ input[type='submit']:hover {
     margin-bottom: 32px;
 }
 
+.product a {
+    font-size: 1.2rem;
+}
+
 .box1 {
     display: flex;
     justify-content: center;
@@ -282,17 +287,18 @@ input[type='submit']:hover {
     z-index: 99;
 }
 
+.product-box a {
+    color: var(--colr-black);
+}
+
 .product-box .product-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     padding: 8px;
-
 }
-
-
 
 .product-box .product-list h2 {
     font-size: 32px;
@@ -306,7 +312,7 @@ input[type='submit']:hover {
     padding: 5px;
     margin: 10px 0;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all .3s ease;
 }
 
 .product-list .product:hover {
@@ -330,6 +336,7 @@ input[type='submit']:hover {
 
 .about-container h2 {
     font-size: 4rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -479,11 +486,9 @@ input[type='submit']:hover {
     content: "@SugarSwirl";
     font-size: 3rem;
     color: var(--colr-black);
-    /* right: 0; */
     left: 50%;
     bottom: 0;
     border-radius: 10px;
-
 }
 
 
@@ -674,19 +679,18 @@ input[type='submit']:hover {
 
 @media screen and (max-width: 1024px) {
 
-.main-menu .fa-bars {display: none;}
+.main-menu .fa-bars {display: flex;color: var(--colr-white);font-size: 1.5rem;cursor:pointer;}
 
-.main-menu .menu-list {display: flex;}
-
+.main-menu .menu-list {display: none;}
 
 
 .nav-wrapper {
-    padding: 20px 10px;
-    max-width: 900px;
+    padding: 0 10px;
+    max-width: 810px;
 }
 
 .nav-wrapper .logo img {
-    width: 28%;
+    width: 30px;
     height: auto;
 }
 
@@ -701,6 +705,14 @@ input[type='submit']:hover {
 
 
 /* Hero Section */
+
+.hero-container .hero-content {
+    max-width: 750px;
+}
+
+.hero-container .hero-content .hero-text h1 {
+    font-size: 66px;
+}
 
 .hero-text h1 {font-size: 60px;}
 
@@ -749,7 +761,9 @@ input[type='submit']:hover {
 .product-box {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -762,9 +776,17 @@ input[type='submit']:hover {
     background-size: cover;
     object-fit: cover;
     border-radius: 10px;
-    width: 100%;
-    height: 300px;
-    z-index: 99;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+}
+
+.product-box .product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 50%;
 }
 
 
@@ -828,14 +850,17 @@ input[type='submit']:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 750px;
     gap:2rem;
 }
 
-.about-image {width: 100%;height: auto;}
+/* .about-image {width: 100%;height: auto;} */
+
+.about-container .about-content .about-image img{
+    width: 100%;height: 500px;
+}
 
 
-.about-image img {width: 100%;height: 500px;}
 
 .about-text {
     font-size: 24px;
@@ -991,7 +1016,7 @@ body {
     overflow: hidden;
 }
 
-.product-box img {border-radius:0;}
+.product-box img {border-radius:0;width: 100%;}
 
 
 
@@ -1008,6 +1033,10 @@ body {
 .product-container .product-box {
     padding: 20px;
     border-radius: 0;
+}
+
+.product-box .product-list {
+    width: 100%;
 }
 
 
@@ -1046,7 +1075,7 @@ body {
 }
 
 
-.about-image img {width: 100%;height: 250px;border-radius: 0;}
+.about-container .about-content .about-image img {width: 100%;height: 300px;border-radius: 0;}
 
 .about-text {
     font-size: 14px;
@@ -1078,15 +1107,17 @@ body {
     padding: 20px;
 }
 
-.popup-container h2::before {
+.popup-container .pop-content h2::before {
     position: absolute;
     content: "@SugarSwirl";
-    font-size: 2.5rem;
-    color: var(--);
-    right: 40%;
-    left: 20%;
+    font-size: 3rem;
+    color: var(--colr-black);
+    left: 5%;
     bottom: 0;
+    border-radius: 10px;
 }
+
+
 .popup-container h1 {
     font-size: 24px;
     margin: 0;
@@ -1115,10 +1146,10 @@ body {
 }
 
 .footer-content {
-    color: var(--colr-black);
-    padding: 0;
-    height: 0;
-    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--colr-white);
 }
 
 .footer-boxes {
