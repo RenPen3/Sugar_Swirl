@@ -562,7 +562,7 @@ input[type='submit']:hover {
 .pop-box h3, .pop-box p {
     color: var(--colr-white);
     letter-spacing: 1px;
-    z-index: 9999;
+    z-index: 0;
 }
 
 .pop-box h3 {
@@ -737,10 +737,6 @@ input[type='submit']:hover {
 
 .hero-icons {
     font-size: 22px;
-}
-
-.hero-icons .fa-brands {
-    padding: 0 8px;
 }
 
 
@@ -943,14 +939,19 @@ body {
 /* Mobile Menu */
 
 .mobile-container {
-    position: absolute;
     display: none;
     right: 0;
     top: 100%;
     width: 60%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: hsl(181, 100%, 69%);
     z-index: 9999;
+}
+
+.mobile-container.show {
+    position: absolute;
+    display: flex;
 }
 
 .mobile-container .mobile-menu {
@@ -968,7 +969,7 @@ body {
 
 .mobile-container .mobile-menu .menu a {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--colr-black);
 }
 .mobile-container .mobile-menu .menu li {
     margin: 2rem 0;
@@ -979,6 +980,14 @@ body {
     display: block;
     color: var(--colr-white);
     font-size: 24px;
+    cursor: pointer;
+}
+
+.main-menu .fa-x {
+    display: none;
+    color: var(--colr-white);
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav-wrapper {
