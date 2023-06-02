@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Courgette&family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Courgette&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap');
 
 :root {
     --colr-main: hsl(55, 100%, 69%);
@@ -6,6 +6,7 @@
     --colr-white: hsl(0, 0%, 96%);
     --colr-black: hsl(0, 0%, 0%);
     --colr-grey: hsl(0, 0%, 50%);
+    --colr-greyish: hsl(0, 0%, 91%);
 }
 
 html {
@@ -19,7 +20,8 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
     color: var(--colr-black);
@@ -236,6 +238,7 @@ input[type='submit']:hover {
 /* Products */
 
 .product-container {
+    font-family: 'Josefin Sans', sans-serif;
     padding: 100px 40px;
     margin-inline: auto;
     background-color: #fff;
@@ -304,9 +307,20 @@ input[type='submit']:hover {
 }
 
 .product-box .product-list h2 {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 500;
     text-align: center;
     width: 100%;
+}
+
+.product-box .product-list h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.product-box .product-list p {
+    font-size: 24px;
+    font-weight: 300;
 }
 
 
@@ -334,12 +348,17 @@ input[type='submit']:hover {
     justify-content: center;
     align-items: center;
     padding: 50px 10px;
+    text-align: center;
     background-color: var(--colr-main);
 }
 
 .about-container h2 {
     font-size: 4rem;
-    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-container h3 {
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
@@ -372,12 +391,10 @@ input[type='submit']:hover {
     margin: 0 auto;
 }
 
-.about-container .about-content .about-text h2 {
-    font-size: 32px;
-}
 
 .about-container .about-content .about-text p {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 300;
     /* line-height: 1.4; */
     /* margin: 24px 0; */
 }
@@ -452,7 +469,7 @@ input[type='submit']:hover {
     outline: none;
     border-radius: 4px;
     resize: none;
-    background-color: var(--colr-white);
+    background-color: var(--colr-greyish);
 }
 
 
@@ -522,7 +539,7 @@ input[type='submit']:hover {
 }
 
 .box-1 {
-    background-image: url('https://source.unsplash.com/random/?random&1/300x300');
+    background-image: url('https://source.unsplash.com/random/?food&1/300x300');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -530,7 +547,7 @@ input[type='submit']:hover {
 }
 
 .box-2 {
-    background-image: url('https://source.unsplash.com/random/?general&1/300x300');
+    background-image: url('https://source.unsplash.com/random/?bakery&1/300x300');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -538,7 +555,7 @@ input[type='submit']:hover {
 }
 
 .box-3 {
-    background-image: url('https://source.unsplash.com/random/?instagram&1/300x300');
+    background-image: url('https://source.unsplash.com/random/?travel&1/300x300');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -575,7 +592,7 @@ input[type='submit']:hover {
 
 .pop-box p {
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .back-top {
@@ -861,7 +878,7 @@ input[type='submit']:hover {
 /* Contact */
 
 .contact-container {
-    background-color: var(--colr-white);
+    background-color: var(--colr-greyish);
 }
 .contact-content {
     display: flex;
@@ -1187,7 +1204,7 @@ body {
     padding: 0px;
     margin: 100px 0;
     text-align: center;
-    background-color: var(--colr-white);
+    background-color: var(--colr-greyish);
     /* border: 3px solid dodgerblue; */
 }
 
@@ -1270,19 +1287,21 @@ body {
 }
 
 
-
+/* Footer Mobile */
 .footer-container {
     padding: 50px 20px;
-    margin: 0;
+    margin-inline: auto;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     gap: 6rem;
+    width: 100%;
     height: 100%;
+    max-width: 300px;
     margin: 2rem 0;
-    /* border: 1px solid lime; */
+    margin-inline: auto;
 }
 
 .footer-boxes {
