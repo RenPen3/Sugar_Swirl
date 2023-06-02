@@ -36,6 +36,7 @@ a {
 }
 
 input[type='submit'] {
+    background-color: var(--colr-main);
     cursor: pointer;
 }
 
@@ -44,6 +45,7 @@ input[type='submit']:hover {
 }
 
 .fa-brands {
+    display: flex;
     font-size: 1.5rem;
     margin-right: 1rem;
     cursor: pointer;
@@ -68,7 +70,6 @@ input[type='submit']:hover {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    /* background-color: transparent; */
     z-index: 99;
 }
 
@@ -77,8 +78,6 @@ input[type='submit']:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
-    /* padding: 15px; */
     max-width: 1200px;
     margin-inline: auto;
 }
@@ -124,7 +123,7 @@ input[type='submit']:hover {
 }
 
 .nav-wrapper .menu-list a:hover {
-    color: #000;
+    color: var(--colr-black);
     background-color: var(--colr-white);
 }
 
@@ -136,7 +135,11 @@ input[type='submit']:hover {
 
 /* Hero Section */
 
-.main-menu .fa-bars, .main-menu .fa-x {
+.main-menu .fa-bars {
+    display: none;
+}
+
+.main-menu .fa-x {
     display: none;
 }
 
@@ -150,7 +153,7 @@ input[type='submit']:hover {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    height: 650px;
+    height: 700px;
     vertical-align: top;
     background-color: rgb(0, 0, 0);
 }
@@ -677,9 +680,72 @@ input[type='submit']:hover {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {   
+    
+/* Mobile Menu */
+.mobile-container {
+    display: none;
+    right: 0;
+    top: 100%;
+    width: 60%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    animation: dino 0.4s ease;
+}
 
-.main-menu .fa-bars {display: flex;color: var(--colr-white);font-size: 1.5rem;cursor:pointer;}
+@keyframes dino {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+    
+}
+
+.mobile-container.show {
+    position: absolute;
+    display: flex;
+}
+
+.mobile-container .mobile-menu {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.mobile-container .mobile-menu .menu {
+    text-align: center;
+    padding: 0;
+    padding: 1rem 0;
+}
+
+
+.mobile-container .mobile-menu .menu a {
+    font-size: 1.5rem;
+    color: var(--colr-secondary);
+}
+
+.mobile-container .mobile-menu .menu li {
+    margin: 2rem 0;
+}
+
+
+.main-menu .fa-bars {
+    display: flex;
+    color: var(--colr-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-menu .fa-x {
+    display: none;
+    color: var(--colr-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
 
 .main-menu .menu-list {display: none;}
 
@@ -793,6 +859,10 @@ input[type='submit']:hover {
 
 
 /* Contact */
+
+.contact-container {
+    background-color: var(--colr-white);
+}
 .contact-content {
     display: flex;
     flex-direction: column;
@@ -835,14 +905,19 @@ input[type='submit']:hover {
 .contact input, .contact textarea {
     font-size: 17px;
     resize: none;
+    background-color: #fff;
 }
+
+/* input[type='submit'] {
+    cursor: pointer;
+} */
 
 
 
 /* About */
 
 .about-container {
-    background-color: var(--colr-white);
+    background-color: var(--colr-main);
 }
 
 .about-container h2 {
@@ -945,8 +1020,19 @@ body {
     width: 60%;
     height: 100vh;
     /* background-color: rgba(0, 0, 0, 0.8); */
-    background-color: hsl(181, 100%, 69%);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
+    animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+    
 }
 
 .mobile-container.show {
@@ -957,7 +1043,6 @@ body {
 .mobile-container .mobile-menu {
     width: 100%;
     margin-inline: auto;
-    /* border: 2px solid lime; */
 }
 
 .mobile-container .mobile-menu .menu {
@@ -969,7 +1054,7 @@ body {
 
 .mobile-container .mobile-menu .menu a {
     font-size: 1.5rem;
-    color: var(--colr-black);
+    color: var(--colr-secondary);
 }
 .mobile-container .mobile-menu .menu li {
     margin: 2rem 0;
@@ -977,7 +1062,7 @@ body {
 
 
 .main-menu .fa-bars {
-    display: block;
+    display: flex;
     color: var(--colr-white);
     font-size: 24px;
     cursor: pointer;

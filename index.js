@@ -5,8 +5,8 @@ const menu = document.querySelector('.mobile-container');
 
 bars.addEventListener('click', () => {
   menu.classList.toggle('show');
-  x.style.display = 'flex';
   bars.style.display = 'none';
+  x.style.display = 'flex';
   
 });
 
