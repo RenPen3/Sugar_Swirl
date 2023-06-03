@@ -99,7 +99,6 @@ input[type='submit']:hover {
 .nav-wrapper .logo h3 {
     color: var(--colr-secondary);
     font-size: 1.3rem;
-    font-weight: 300;
 }
 
 
@@ -115,16 +114,22 @@ input[type='submit']:hover {
 .nav-wrapper .main-menu .menu-list a {
     /* opacity: 1; */
     color: var(--colr-white);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
-    padding: 5px 20px;
+    width: 100%;
+    padding: 8px 16px;
     border-radius: 30px;
     transition: all 0.4s ease;
 }
 
-.nav-wrapper .menu-list a:hover {
+.nav-wrapper .main-menu .menu-list li a:focus, .nav-wrapper .main-menu .menu-list li a:active {
+    color: var(--colr-black);
+    background-color: var(--colr-white);
+}
+
+.nav-wrapper .main-menu .menu-list li a:hover {
     color: var(--colr-black);
     background-color: var(--colr-white);
 }
@@ -762,9 +767,6 @@ input[type='submit']:hover {
     font-size: 24px;
     cursor: pointer;
 }
-
-
-.main-menu .menu-list {display: none;}
 
 
 .nav-wrapper {
