@@ -111,12 +111,14 @@ input[type='submit']:hover {
     white-space: nowrap;
 }
 
-.nav-wrapper .main-menu .menu-list a {
+
+
+.nav-wrapper .main-menu .menu-list li a {
     /* opacity: 1; */
     color: var(--colr-white);
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     width: 100%;
     padding: 8px 16px;
@@ -124,15 +126,14 @@ input[type='submit']:hover {
     transition: all 0.4s ease;
 }
 
-.nav-wrapper .main-menu .menu-list li a:focus, .nav-wrapper .main-menu .menu-list li a:active {
+.nav-wrapper .main-menu .menu-list li a:hover  {
     color: var(--colr-black);
     background-color: var(--colr-white);
 }
 
-.nav-wrapper .main-menu .menu-list li a:hover {
-    color: var(--colr-black);
-    background-color: var(--colr-white);
-}
+
+
+
 
 
 
@@ -244,7 +245,7 @@ input[type='submit']:hover {
 
 .product-container {
     font-family: 'Josefin Sans', sans-serif;
-    padding: 100px 40px;
+    padding: 70px 20px;
     margin-inline: auto;
     background-color: #fff;
 }
@@ -352,7 +353,7 @@ input[type='submit']:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    padding: 70px 20px;
     text-align: center;
     background-color: var(--colr-main);
 }
@@ -416,7 +417,7 @@ input[type='submit']:hover {
 
 /* Contact Form */
 .contact-container {
-    padding: 130px 0;
+    padding: 70px 0;
     background-color: #fff;
 }
 
@@ -488,7 +489,7 @@ input[type='submit']:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 130px 0;
+    padding: 70px 0;
     color: var(--colr-black);
     background-color: var(--colr-secondary);
 }
