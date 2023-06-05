@@ -598,11 +598,11 @@ input[type='submit']:hover {
 
 .pop-box p {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .back-top {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: var(--colr-secondary);
     text-align: center;
 }
@@ -780,6 +780,10 @@ input[type='submit']:hover {
     height: auto;
 }
 
+.nav-wrapper .menu-list {
+    display: none;
+}
+
 
 .nav-wrapper .menu-list a {
     font-size: 15px;
@@ -881,23 +885,23 @@ input[type='submit']:hover {
 /* Contact */
 
 .contact-container {
+    padding: 70px 20px;
     background-color: var(--colr-greyish);
 }
-.contact-content {
+.contact-container .contact-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 750px;
-    height: 40vh;
     background-color: transparent;
 }
 
 
-.contact-box {
+.contact-container .contact-content .contact-box {
     text-align: left;
     width: 100%;
-    padding: 20px;
+    /* padding: 70px 20px; */
 }
 
 .contact-text {
@@ -1158,6 +1162,10 @@ body {
     flex-direction: column;
 }
 
+.product-container h2 {
+    font-size: 40px;
+}
+
 
 
 .product-box {
@@ -1181,7 +1189,7 @@ body {
     justify-content: center;
     align-content: center;
     width: 100%;
-    padding: 100px 0px;
+    padding: 70px 0px;
     /* margin: 100px 0; */
     background-color: var(--colr-white);
 }
@@ -1195,39 +1203,65 @@ body {
     width: 100%;
 }
 
+.product-box .product-list h2 {
+    font-size: 2rem;
+}
 
-.contact-box {padding: 0;}
+.product-box .product-list h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.product-box .product-list p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
 
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 0px;
+    padding: 70px 10px;
     margin: 100px 0;
     text-align: center;
     background-color: var(--colr-greyish);
     /* border: 3px solid dodgerblue; */
 }
 
-.contact-content {
+.contact-container .contact-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    padding: 20px;
+    /* height: 100vh; */
+    padding: 0 20px;
     border-radius: 0;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* background-color: var(--colr-main); */
 }
 
+.contact-container .contact-content .contact-box {padding: 0;}
+
+.contact-container .contact-content .contact-box h2 {
+    font-size: 40px;
+}
 
 .about-container {
-    padding: 50px 20px;
+    padding: 70px 20px;
     background-color: var(--colr-main);
+}
+
+.about-container h2 {
+    font-size: 40px;
+}
+
+.about-container h3 {
+    font-size: 24px;
 }
 
 
@@ -1255,16 +1289,21 @@ body {
 
 .popup-container {
     height: 100%;
-    padding: 20px;
+    padding: 70px 20px;
+}
+
+.popup-container .pop-content h2 {
+    font-size: 50px;
 }
 
 .popup-container .pop-content h2::before {
     position: absolute;
     content: "@SugarSwirl";
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: var(--colr-black);
-    left: 5%;
-    bottom: 0;
+    left: 25%;
+    bottom: 12%;
+    text-align: center;
     border-radius: 10px;
 }
 
@@ -1313,8 +1352,8 @@ body {
     /* border: 1px solid red; */
 }
 
-.footer-container p {
-    font-size: 12px;
+.footer-boxes li, .footer-boxes a, .footer-boxes p {
+    font-size: 1.1rem;
 }
 
 
