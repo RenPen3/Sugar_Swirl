@@ -546,7 +546,7 @@ input[type='submit']:hover {
 }
 
 .box-1 {
-    background-image: url('https://images.unsplash.com/example.jpg?ixid=12312312');
+    background-image: url('https://i.ibb.co/jHvxrQF/food.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,7 +554,7 @@ input[type='submit']:hover {
 }
 
 .box-2 {
-    background-image: url('https://source.unsplash.com/random/?baking&1/300x300');
+    background-image: url('https://i.ibb.co/tLf6QLJ/bites.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -562,7 +562,7 @@ input[type='submit']:hover {
 }
 
 .box-3 {
-    background-image: url('https://source.unsplash.com/random/?travel&1/300x300');
+    background-image: url('https://i.ibb.co/hZJygcZ/outdoors.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -575,7 +575,7 @@ input[type='submit']:hover {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .pop-box:nth-last-of-type(odd) {
