@@ -546,7 +546,7 @@ input[type='submit']:hover {
 }
 
 .box-1 {
-    background-image: url('https://source.unsplash.com/random/?food&1/300x300');
+    background-image: url('https://images.unsplash.com/example.jpg?ixid=12312312');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
