@@ -2,6 +2,8 @@ const bars = document.querySelector('.fa-bars');
 const x = document.querySelector('.fa-x');
 const menu = document.querySelector('.mobile-container');
 const btns = document.querySelectorAll('.btns');
+bars.style.display = 'none';
+
 
 
 function toggleBtn() {
