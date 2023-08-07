@@ -749,7 +749,7 @@ input[type='submit']:hover {
 
 
 .main-menu .fa-bars {
-    display: flex;
+    display: none;
     color: var(--colr-white);
     font-size: 24px;
     cursor: pointer;
