@@ -71,7 +71,9 @@ input[type='submit']:hover {
 .header-container {
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgba(0, 0, 0, 0.7);
+    
     z-index: 99;
 }
 
@@ -710,11 +712,15 @@ input[type='submit']:hover {
 .mobile-container {
     position: absolute;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     right: 0;
     top: 100%;
     width: 60%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 0 0 16px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     transform: translateX(110%);
     transition: transform .9s ease-in-out;
@@ -729,22 +735,35 @@ input[type='submit']:hover {
 .mobile-container .mobile-menu {
     width: 100%;
     margin-inline: auto;
+
 }
 
 .mobile-container .mobile-menu .menu {
-    text-align: center;
+    font-size: 1.5em;
+    color: var(--colr-main);
     padding: 0;
     padding: 1rem 0;
 }
 
+.mobile-container .mobile-menu .menu i {
+    text-align: left;
+    margin: 0;
+}
+
+.mobile-container .mobile-menu .menu h2 {
+    text-align: left;
+    color: var(--colr-main);
+}
 
 .mobile-container .mobile-menu .menu a {
     font-size: 1.5rem;
-    color: var(--colr-secondary);
+    color: var(--colr-white);
 }
 
 .mobile-container .mobile-menu .menu li {
-    margin: 2rem 0;
+    text-align: left;
+    border-bottom: 1px solid var(--colr-white);
+    padding-bottom: 3px;
 }
 
 
@@ -760,6 +779,11 @@ input[type='submit']:hover {
     color: var(--colr-white);
     font-size: 24px;
     cursor: pointer;
+}
+
+
+.mobile__hero-icons {
+    color: var(--colr-main);
 }
 
 
@@ -1037,7 +1061,6 @@ body {
     top: 100%;
     width: 60%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
     transform: translateX(110%);
     transition: transform .8s ease-in-out;
@@ -1056,15 +1079,15 @@ body {
 }
 
 .mobile-container .mobile-menu .menu {
-    text-align: center;
+    text-align: left;
     padding: 0;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 
 
 .mobile-container .mobile-menu .menu a {
     font-size: 1.5rem;
-    color: var(--colr-secondary);
+    font-weight: 300;
 }
 .mobile-container .mobile-menu .menu li {
     margin: 2rem 0;
