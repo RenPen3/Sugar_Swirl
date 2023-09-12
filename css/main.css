@@ -227,10 +227,10 @@ input[type='submit']:hover {
 
 .hero-container .hero-content .hero-text a {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     margin: 1rem 0 1.5em 0;
-    padding: 8px 24px;
+    padding: 9px 24px 8px 24px;
     border-radius: 3px;
     color: var(--colr-black);
     background-color: var(--colr-secondary);
@@ -1124,6 +1124,7 @@ body {
 .nav-wrapper .logo img {
     width: 1.5rem;
     height: auto;
+    margin: 0;
 }
 
 .nav-wrapper .menu-list a {
