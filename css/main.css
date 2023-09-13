@@ -487,7 +487,11 @@ input[type='submit']:hover {
     border-radius: 4px;
     resize: none;
     /* background-color: var(--colr-greyish); */
-    background-color:rgb(217, 243, 251);
+    /* background-color:rgb(217, 243, 251); */
+    border: 1.5px solid var(--colr-grey);
+}
+.contact input[type="submit"] {
+    border: none;
 }
 
 
@@ -952,10 +956,7 @@ input[type='submit']:hover {
     
 }
 
-.contact input, .contact textarea {
-    /* background-color: var(--colr-greyish); */
-    background-color:rgb(217, 243, 251);
-}
+
 
 /* input[type='submit'] {
     cursor: pointer;
